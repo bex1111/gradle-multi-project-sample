@@ -57,7 +57,7 @@ Build a specific task in a sub project. For example `app` project has a task to 
 $ ./gradlew :app:customFatJar
 $ java -jar app/build/libs/executable-1.0.jar
 17:20:42.309 [main] INFO base.MyBase - called doSomeProcess in Base
-17:20:42.310 [main] INFO common.MyLibrary - do some process
+17:20:42.310 [main] INFO common.RepositoryImpl - do some process
 17:20:42.311 [main] INFO base.MyBase - log floor: 3
 17:20:42.316 [main] INFO base.MyBase - f.getCumPct('Z'): 0.5
 ```

@@ -11,28 +11,21 @@ subprojects {
     apply plugin: 'com.github.sherter.google-java-format'
 
     dependencies {
-        // for type inference
-        annotationProcessor 'org.projectlombok:lombok:1.18.12'
-        compileOnly 'org.projectlombok:lombok:1.18.12'
-        testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
-        testCompileOnly 'org.projectlombok:lombok:1.18.12'
 
-        // for logging
         implementation 'ch.qos.logback:logback-classic:1.2.3'
         implementation 'org.slf4j:slf4j-api:1.7.26'
 
         implementation 'com.google.guava:guava:29.0-jre'
         testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.2'
         testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.6.2'
+        testImplementation 'com.example:static-mock:1.0.0'
     }
 
     repositories {
-        jcenter()
+        mavenCentral()
     }
 
     test {
         useJUnitPlatform()
     }
-
-    compileJava.dependsOn tasks.googleJavaFormat
 }

@@ -6,14 +6,14 @@ plugins {
 mainClassName = 'app.Main'
 
 dependencies {
-    compile project(':base')
+    implementation project(':base')
 }
 
 task customFatJar(type: Jar) {
     manifest {
         attributes 'Main-Class': 'app.Main'
     }
-    baseName = 'executable'
+    archiveFileName = 'executable'
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
     with jar
 }

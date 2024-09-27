@@ -4,11 +4,11 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class RepositoryImplTest {
+class FeriRepositoryImplTest {
 
     @Test
     void testSomeLibraryMethod() {
-        RepositoryImpl classUnderTest = new RepositoryImpl();
+        FeriRepositoryImpl classUnderTest = new FeriRepositoryImpl();
         assertEquals("Feri", classUnderTest.findName());
     }
 }

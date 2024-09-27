@@ -1,6 +1,6 @@
 package common;
 
-public class RepositoryImpl implements Repository {
+public class FeriRepositoryImpl implements Repository {
 
 
   @Override
